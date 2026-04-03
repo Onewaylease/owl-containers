@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OWL Inventory | One Way Lease</title>
+    <link rel="stylesheet" href="index.css?v=1.0.1">
+</head>
+<body>
+
+    <header id="stickyConsole" class="sticky-console">
+        <div class="site-branding">
+            <div class="inventory-container brand-layout">
+                <img src="logo.webp" alt="One Way Lease" class="main-logo">
+                <button id="filterToggle" class="mobile-filter-toggle stenciled">
+                    <span>FILTERS</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="manifest-content">
+            <div class="filter-row">
+                <span class="manifest-label stenciled">TYPE</span>
+                <div id="typeFilters" class="filter-chips"></div>
+            </div>
+            <div class="filter-row">
+                <span class="manifest-label stenciled">GRADE</span>
+                <div id="gradeFilters" class="filter-chips"></div>
+            </div>
+            <div class="filter-row">
+                <span class="manifest-label stenciled">COLOR</span>
+                <div id="colorFilters" class="filter-chips"></div>
+            </div>
+            
+            <div class="search-sort-bar">
+                <input type="text" id="citySearch" class="search-input" placeholder="Search by city (e.g. Atlanta, Chicago)..." aria-label="Search by city">
+                <div class="sort-container">
+                    <span class="sort-label stenciled">SORT:</span>
+                    <div class="sort-options">
+                        <button class="sort-btn active" data-sort="city-asc">A-Z</button>
+                        <button class="sort-btn" data-sort="city-desc">Z-A</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="inventory-container">
+        <div id="inventoryRoot">
+            <div class="loading-state">
+                <p class="stenciled">Accessing Real-Time Inventory...</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="page-footer">
+        <div class="inventory-container">
+            <div style="padding-top: 2rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; color: var(--text-secondary); font-size: 0.8rem;">
+                <div class="stenciled">ONE WAY LEASE, INC. &copy; 2026</div>
+                <div style="display: flex; gap: 20px;">
+                    <a href="https://onewaylease.com" style="color: inherit; text-decoration: none;">onewaylease.com</a>
+                    <a href="mailto:info@onewaylease.com" style="color: var(--accent-color); text-decoration: none; font-weight: 700;">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="mailto:sales@onewaylease.com" class="sticky-cta">Request a Quote &rarr;</a>
+
+    <script src="inventory.js?v=1.0.1"></script>
+</body>
+</html>
