@@ -378,6 +378,10 @@ body {
   flex: 0 0 16px;
 }
 
+.filter-chips > button:last-child {
+  margin-right: 20px;
+}
+
 .filter-chips::-webkit-scrollbar {
   display: none;
 }
