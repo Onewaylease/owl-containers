@@ -369,6 +369,7 @@ body {
   flex-wrap: nowrap;
   overflow-x: auto;
   gap: 6px;
+  padding-right: 16px;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
