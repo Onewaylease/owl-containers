@@ -391,7 +391,7 @@ body {
   border: 1px solid var(--border-color);
   color: var(--text-primary);
   padding: 5px 0;
-  min-width: 68px;
+  min-width: 64px;
   border-radius: 9999px;
   font-size: 0.78rem;
   line-height: 1.4;
