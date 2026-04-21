@@ -369,9 +369,13 @@ body {
   flex-wrap: nowrap;
   overflow-x: auto;
   gap: 6px;
-  padding-right: 16px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.filter-chips::after {
+  content: '';
+  flex: 0 0 16px;
 }
 
 .filter-chips::-webkit-scrollbar {
