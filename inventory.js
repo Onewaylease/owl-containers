@@ -182,7 +182,6 @@ const INVENTORY_DATA = [
     },
 ];
 
-
 const RAL_COLORS = {
     "1012": "#D6AE01",
     "1015": "#E8DCAD",
@@ -194,7 +193,7 @@ const RAL_COLORS = {
     "7016": "#383E42",
     "7035": "#CBD0CC",
     "7040": "#9DA3A6",
-    "9001": "#FDF4E3"
+    "9001": "#FDF4E3",
 };
 
 // Type display name overrides (code → label shown in UI)
