@@ -389,8 +389,6 @@ body {
 }
 
 .chip-ral.active {
-  outline: 3px solid #fff;
-  outline-offset: 1px;
   transform: scale(1.05);
   z-index: 10;
 }
