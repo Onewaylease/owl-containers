@@ -1,186 +1,205 @@
 const INVENTORY_DATA = [
     {
-        city: "Atlanta", region: "south", total: 1,
+        city: "Atlanta", region: "south", total: 3,
         units: [
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 2 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 1 }
         ]
     },
     {
         city: "Calgary", region: "canada", total: 1,
         units: [
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 1 }
         ]
     },
     {
-        city: "Chicago", region: "midwest", total: 101,
+        city: "Chicago", region: "midwest", total: 143,
         units: [
-            { grade: "NEW", ral: "unknown", type: "10SC", desc: "10' Shipping Container", qty: 3 },
-            { grade: "NEW", ral: "unknown", type: "20DD", desc: "20' Double Door", qty: 4 },
-            { grade: "NEW", ral: "unknown", type: "20DU", desc: "20' Duocon", qty: 3 },
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 64 },
-            { grade: "NEW", ral: "unknown", type: "40DH", desc: "40' Double Door HC", qty: 2 },
-            { grade: "NEW", ral: "unknown", type: "4H4S", desc: "40' HC Special", qty: 1 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 20 },
-            { grade: "IICL", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 1 },
-            { grade: "CW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 1 },
-            { grade: "ASIS", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 1 },
-            { grade: "CW/SRVYD", ral: "unknown", type: "20OT", desc: "20' Open Top", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "10SC", desc: "10' Shipping Container", qty: 5 },
+            { grade: "NEW", ral: "1015", type: "20DD", desc: "20' Double Door", qty: 4 },
+            { grade: "NEW", ral: "1015", type: "20DU", desc: "20' Duocon", qty: 5 },
+            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 10 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 73 },
+            { grade: "NEW", ral: "1012", type: "20GP", desc: "20' General Purpose", qty: 5 },
+            { grade: "NEW", ral: "7035", type: "20GP", desc: "20' General Purpose", qty: 3 },
+            { grade: "NEW", ral: "1015", type: "40DH", desc: "40' Double Door HC", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 29 },
+            { grade: "NEW", ral: "unknown", type: "40HC", desc: "40' HC w/ FLP", qty: 3 },
+            { grade: "NEW", ral: "1015", type: "4H4S", desc: "40' HC Special", qty: 1 },
+            { grade: "IICL", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "CW", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "CW", type: "20OT", desc: "20' Open Top", qty: 1 },
+            { grade: "ASIS", type: "20GP", desc: "20' General Purpose", qty: 1 }
+        ]
+    },
+    {
+        city: "Cincinnati", region: "midwest", total: 1,
+        units: [
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 1 }
         ]
     },
     {
         city: "Cleveland", region: "midwest", total: 1,
         units: [
-            { grade: "CW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "CW", type: "20GP", desc: "20' General Purpose", qty: 1 }
         ]
     },
     {
         city: "Dallas", region: "south", total: 21,
         units: [
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 2 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 6 },
-            { grade: "3TRP", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 3 },
-            { grade: "IICL", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 3 },
-            { grade: "CW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 1 },
-            { grade: "CW", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 6 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 2 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 6 },
+            { grade: "IICL", type: "40HC", desc: "40' High Cube", qty: 3 },
+            { grade: "CW", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "CW", type: "40HC", desc: "40' High Cube", qty: 6 },
+            { grade: "3TRP", type: "40HC", desc: "40' HC w/ FLP", qty: 3 }
+        ]
+    },
+    {
+        city: "Denver", region: "west", total: 4,
+        units: [
+            { grade: "CW", type: "40HC", desc: "40' High Cube", qty: 4 }
         ]
     },
     {
         city: "Detroit", region: "midwest", total: 1,
         units: [
-            { grade: "NEW", ral: "unknown", type: "20HT", desc: "20' Hard Top Open Top", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "20HT", desc: "20' Hard Top Open Top", qty: 1 }
         ]
     },
     {
-        city: "El Paso", region: "south", total: 6,
+        city: "El Paso", region: "south", total: 7,
         units: [
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 6 },
+            { grade: "NEW", ral: "1015", type: "40DH", desc: "40' Double Door HC", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 6 }
         ]
     },
     {
-        city: "Houston", region: "south", total: 78,
+        city: "Houston", region: "south", total: 83,
         units: [
-            { grade: "NEW", ral: "unknown", type: "10MM", desc: "10' Minimal Maintenance", qty: 4 },
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 12 },
-            { grade: "NEW", ral: "unknown", type: "40DH", desc: "40' Double Door HC", qty: 1 },
-            { grade: "NEW", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 5 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 7 },
-            { grade: "3TRP", ral: "unknown", type: "40GP", desc: "40' General Purpose", qty: 1 },
-            { grade: "3TRP", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 1 },
-            { grade: "IICL", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 29 },
-            { grade: "CW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 3 },
-            { grade: "CW", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 4 },
-            { grade: "WWT", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 9 },
-            { grade: "ASIS", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 2 },
+            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "NEW", ral: "7035", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 17 },
+            { grade: "NEW", ral: "7035", type: "40HC", desc: "40' High Cube", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' High Cube", qty: 1 },
+            { grade: "NEW", ral: "9001", type: "40HC", desc: "40' High Cube", qty: 1 },
+            { grade: "NEW", ral: "unknown", type: "40HC", desc: "40' HC w/ FLP", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 10 },
+            { grade: "IICL", type: "40HC", desc: "40' High Cube", qty: 28 },
+            { grade: "CW", type: "20GP", desc: "20' General Purpose", qty: 3 },
+            { grade: "CW", type: "40HC", desc: "40' High Cube", qty: 6 },
+            { grade: "WWT", type: "40HC", desc: "40' High Cube", qty: 9 },
+            { grade: "3TRP", type: "40GP", desc: "40' General Purpose", qty: 1 },
+            { grade: "3TRP", type: "40HC", desc: "40' HC w/ FLP", qty: 1 },
+            { grade: "ASIS", type: "40HC", desc: "40' High Cube", qty: 2 }
         ]
     },
     {
         city: "Kansas City", region: "midwest", total: 7,
         units: [
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 2 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 5 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 2 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 5 }
         ]
     },
     {
-        city: "LA/Long Beach", region: "west", total: 7,
+        city: "LA/Long Beach", region: "west", total: 23,
         units: [
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 3 },
-            { grade: "NEW", ral: "unknown", type: "20OS", desc: "20OS", qty: 2 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 1 },
-            { grade: "CW", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 1 },
+            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 6 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 5 },
+            { grade: "NEW", ral: "1015", type: "20HC", desc: "20' High Cube", qty: 4 },
+            { grade: "NEW", ral: "unknown", type: "20OS", desc: "20' Open Side", qty: 2 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 5 },
+            { grade: "CW", type: "40HC", desc: "40' High Cube", qty: 1 }
+        ]
+    },
+    {
+        city: "Louisville", region: "midwest", total: 5,
+        units: [
+            { grade: "3TRP", type: "40HC", desc: "40' HC w/ FLP", qty: 5 }
         ]
     },
     {
         city: "Memphis", region: "south", total: 16,
         units: [
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 3 },
-            { grade: "NEW", ral: "unknown", type: "40DH", desc: "40' Double Door HC", qty: 1 },
-            { grade: "CW", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 8 },
-            { grade: "WWT", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 4 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 3 },
+            { grade: "NEW", ral: "1015", type: "40DH", desc: "40' Double Door HC", qty: 1 },
+            { grade: "CW", type: "40HC", desc: "40' High Cube", qty: 8 },
+            { grade: "WWT", type: "20GP", desc: "20' General Purpose", qty: 4 }
         ]
     },
     {
-        city: "Miami", region: "south", total: 75,
+        city: "Miami", region: "south", total: 83,
         units: [
-            { grade: "NEW", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 4 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 20 },
-            { grade: "IICL", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 51 },
+            { grade: "NEW", ral: "unknown", type: "40HC", desc: "40' HC w/ FLP", qty: 3 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 17 },
+            { grade: "IICL", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "IICL", type: "40HC", desc: "40' High Cube", qty: 62 }
         ]
     },
     {
         city: "Minneapolis", region: "midwest", total: 1,
         units: [
-            { grade: "NEW", ral: "unknown", type: "20HT", desc: "20' Hard Top Open Top", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "20HT", desc: "20' Hard Top Open Top", qty: 1 }
         ]
     },
     {
-        city: "Oakland", region: "west", total: 3,
+        city: "New Jersey/NY", region: "northeast", total: 1,
         units: [
-            { grade: "NEW", ral: "unknown", type: "10SC", desc: "10' Shipping Container", qty: 1 },
-            { grade: "NEW", ral: "unknown", type: "20DU", desc: "20' Duocon", qty: 1 },
-            { grade: "WWT", ral: "unknown", type: "10GP", desc: "10' General Purpose", qty: 1 },
+            { grade: "NEW", ral: "5013", type: "40HC", desc: "40' High Cube", qty: 1 }
+        ]
+    },
+    {
+        city: "Oakland", region: "west", total: 6,
+        units: [
+            { grade: "NEW", ral: "1015", type: "10SC", desc: "10' Shipping Container", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "20DU", desc: "20' Duocon", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 2 },
+            { grade: "CW", type: "40HC", desc: "40' High Cube", qty: 1 },
+            { grade: "WWT", type: "10GP", desc: "10' General Purpose", qty: 1 }
         ]
     },
     {
         city: "Oklahoma", region: "south", total: 12,
         units: [
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 4 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 2 },
-            { grade: "3TRP", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 3 },
-            { grade: "CW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 2 },
-            { grade: "CW", ral: "unknown", type: "40GP", desc: "40' General Purpose", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 4 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 2 },
+            { grade: "CW", type: "20GP", desc: "20' General Purpose", qty: 2 },
+            { grade: "CW", type: "40GP", desc: "40' General Purpose", qty: 1 },
+            { grade: "3TRP", type: "40HC", desc: "40' High Cube", qty: 3 }
         ]
     },
     {
         city: "Omaha", region: "midwest", total: 2,
         units: [
             { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 1 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 1 }
         ]
     },
     {
         city: "Phoenix", region: "west", total: 2,
         units: [
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 2 },
-        ]
-    },
-    {
-        city: "Salt Lake City", region: "west", total: 16,
-        units: [
-            { grade: "NEW", ral: "unknown", type: "10MM", desc: "10' Minimal Maintenance", qty: 3 },
-            { grade: "NEW", ral: "unknown", type: "40DH", desc: "40' Double Door HC", qty: 1 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 6 },
-            { grade: "CW", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 6 },
-        ]
-    },
-    {
-        city: "Shanghai", region: "asia", total: 106,
-        units: [
-            { grade: "NEW", ral: "unknown", type: "20DD", desc: "20' Double Door", qty: 2 },
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 57 },
-            { grade: "NEW", ral: "unknown", type: "20HC", desc: "20' High Cube", qty: 16 },
-            { grade: "NEW", ral: "unknown", type: "40DH", desc: "40' Double Door HC", qty: 4 },
-            { grade: "NEW", ral: "unknown", type: "40IH", desc: "40IH", qty: 22 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 5 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 2 }
         ]
     },
     {
         city: "St. Louis", region: "midwest", total: 4,
         units: [
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 4 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 4 }
         ]
     },
     {
-        city: "Tacoma", region: "west", total: 13,
+        city: "Tacoma", region: "west", total: 19,
         units: [
-            { grade: "NEW", ral: "unknown", type: "10MM", desc: "10' Minimal Maintenance", qty: 1 },
-            { grade: "NEW", ral: "unknown", type: "20DU", desc: "20' Duocon", qty: 1 },
-            { grade: "NEW", ral: "unknown", type: "20GP", desc: "20' General Purpose", qty: 2 },
-            { grade: "NEW", ral: "unknown", type: "40DH", desc: "40' Double Door HC", qty: 1 },
-            { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' High Cube Flat Rack", qty: 7 },
-            { grade: "WWT", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "20DU", desc: "20' Duocon", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "NEW", ral: "1015", type: "40HC", desc: "40' HC w/ FLP", qty: 10 },
+            { grade: "NEW", ral: "5010", type: "40HC", desc: "40' HC w/ FLP", qty: 2 },
+            { grade: "NEW", ral: "unknown", type: "40HC", desc: "40' HC w/ FLP", qty: 1 },
+            { grade: "WWT", type: "20GP", desc: "20' General Purpose", qty: 4 }
         ]
-    },
+    }
 ];
+
 const RAL_COLORS = {
     "1012": "#D6AE01",
     "1015": "#E8DCAD",
