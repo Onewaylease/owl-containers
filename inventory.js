@@ -12,9 +12,9 @@ const INVENTORY_DATA = [
         ]
     },
     {
-        city: "Chicago", region: "midwest", total: 101,
+        city: "Chicago", region: "midwest", total: 103,
         units: [
-            { grade: "NEW", ral: "1015", type: "10SC", desc: "10' Shipping Container", qty: 3 },
+            { grade: "NEW", ral: "1015", type: "10SC", desc: "10' Shipping Container", qty: 7 },
             { grade: "NEW", ral: "1015", type: "20DD", desc: "20' Double Door", qty: 4 },
             { grade: "NEW", ral: "1015", type: "20DU", desc: "20' Duocon", qty: 3 },
             { grade: "ASIS", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 1 },
@@ -27,7 +27,7 @@ const INVENTORY_DATA = [
             { grade: "CW", ral: "5010", type: "20OT", desc: "20' Open Top", qty: 1 },
             { grade: "NEW", ral: "1015", type: "40DH", desc: "40' Double Door HC", qty: 2 },
             { grade: "NEW", ral: "1015", type: "4H4S", desc: "40' HC Special", qty: 1 },
-            { grade: "NEW", ral: "1015", type: "4HCF", desc: "40' HC w/ FLP", qty: 18 },
+            { grade: "NEW", ral: "1015", type: "4HCF", desc: "40' HC w/ FLP", qty: 16 },
             { grade: "NEW", ral: "unknown", type: "4HCF", desc: "40' HC w/ FLP", qty: 2 },
         ]
     },
@@ -117,8 +117,9 @@ const INVENTORY_DATA = [
         ]
     },
     {
-        city: "Miami", region: "south", total: 75,
+        city: "Miami", region: "south", total: 77,
         units: [
+            { grade: "NEW", ral: "1015", type: "40DH", desc: "40' Double Door HC", qty: 2 },
             { grade: "IICL", ral: "3009", type: "40HC", desc: "40' High Cube", qty: 4 },
             { grade: "IICL", ral: "5010", type: "40HC", desc: "40' High Cube", qty: 10 },
             { grade: "IICL", ral: "5013", type: "40HC", desc: "40' High Cube", qty: 1 },
@@ -172,7 +173,8 @@ const INVENTORY_DATA = [
         units: [
             { grade: "NEW", ral: "1015", type: "10MM", desc: "10' MiniMAX", qty: 1 },
             { grade: "NEW", ral: "1015", type: "20DU", desc: "20' Duocon", qty: 1 },
-            { grade: "NEW", ral: "7015", type: "20GP", desc: "20' General Purpose", qty: 2 },
+            { grade: "NEW", ral: "1015", type: "20GP", desc: "20' General Purpose", qty: 1 },
+            { grade: "NEW", ral: "7015", type: "20GP", desc: "20' General Purpose", qty: 1 },
             { grade: "NEW", ral: "1015", type: "40DH", desc: "40' Double Door HC", qty: 1 },
             { grade: "WWT", ral: "unknown", type: "40HC", desc: "40' High Cube", qty: 1 },
             { grade: "NEW", ral: "1015", type: "4HCF", desc: "40' HC w/ FLP", qty: 5 },
